@@ -10,10 +10,11 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     overflow: hidden;
 }
@@ -30,20 +31,24 @@ body {
 .container {
     max-width: 680px;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .profile {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .logo-container {
     width: 250px;
     height: 250px;
-    margin: 0 auto 20px;
+    margin: 0 auto 15px;
     position: relative;
     animation: float 6s ease-in-out infinite;
 }
@@ -243,52 +248,92 @@ body {
 
 /* Media queries para responsividad */
 @media (max-width: 480px) {
-    .animated-text {
-        font-size: 1.8rem;
-        white-space: nowrap;
-        padding: 0 10px;
-    }
-    
-    .tagline {
-        font-size: 1rem;
-        white-space: nowrap;
-        padding: 0 10px;
-    }
-    
-    .logo-container {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .link-card {
-        padding: 14px 16px;
+    body {
+        padding: 5px;
     }
 
     .container {
-        padding: 15px;
+        padding: 5px;
+    }
+
+    .animated-text {
+        font-size: 1.6rem;
+        white-space: nowrap;
+        padding: 0 5px;
+        margin-bottom: 5px;
+    }
+    
+    .tagline {
+        font-size: 0.9rem;
+        white-space: nowrap;
+        padding: 0 5px;
+        margin-bottom: 15px;
+    }
+    
+    .logo-container {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 10px;
+    }
+    
+    .link-card {
+        padding: 12px 14px;
+        margin-bottom: 8px;
     }
 
     .profile {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .social-links {
-        margin-top: 30px;
+        margin-top: 15px;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* Ajuste específico para Samsung S23 FE y similares */
+@media screen and (max-height: 800px) {
+    .logo-container {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 8px;
+    }
+
+    .animated-text {
+        font-size: 1.4rem;
+        margin-bottom: 3px;
+    }
+
+    .tagline {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .link-card {
+        padding: 10px 12px;
+        margin-bottom: 6px;
+    }
+
+    .social-links {
+        margin-top: 10px;
     }
 }
 
 /* Ajuste adicional para pantallas muy pequeñas */
 @media (max-width: 360px) {
     .animated-text {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .tagline {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     
     .logo-container {
-        width: 150px;
-        height: 150px;
+        width: 110px;
+        height: 110px;
     }
 }
