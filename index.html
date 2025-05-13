@@ -8,7 +8,7 @@
     
     <!-- Enlaces a hojas de estilo -->
     <link rel="stylesheet" href="styless.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Canvas para las partículas del fondo -->
@@ -25,43 +25,43 @@
             </div>
             <!-- Título y tagline -->
             <h1 class="animated-text">PERFECT TOURS</h1>
-            <p class="tagline">Tu Experiencia de Viaje Perfecta</p>
+            <p class="tagline">La esencia del Perú en cada tour</p>
         </div>
 
         <!-- Sección de enlaces principales -->
         <div class="links">
-            <!-- Tarjeta de Traslados Privados -->
-            <a href="#" class="link-card" data-tilt>
-                <i class="fas fa-car"></i>
-                <span>Traslados Privados</span>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/PerfectToursPeru/" class="link-card" data-tilt>
+                <i class="fab fa-facebook"></i>
+                <span>Facebook</span>
                 <div class="card-glow"></div>
             </a>
-            <!-- Tarjeta de Tours Personalizados -->
-            <a href="#" class="link-card" data-tilt>
-                <i class="fas fa-map-marked-alt"></i>
-                <span>Tours Personalizados</span>
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/perfecttours.pe/" class="link-card" data-tilt>
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
                 <div class="card-glow"></div>
             </a>
-            <!-- Tarjeta de Traslados Corporativos -->
+            <!-- Tiktoks -->
             <a href="#" class="link-card" data-tilt>
-                <i class="fas fa-users"></i>
-                <span>Traslados Corporativos</span>
+                <i class="fab fa-tiktok"></i>
+                <span>Tiktok</span>
                 <div class="card-glow"></div>
             </a>
-            <!-- Tarjeta de Contacto -->
-            <a href="#" class="link-card" data-tilt>
-                <i class="fas fa-phone"></i>
-                <span>Contacto</span>
+            <!-- Whatsapp -->
+            <a href="https://wa.me/51974223785?text=Hola%2C%20Vengo%20%20recomendado%20por%20Juan%20Alvarez%20y%20quiero%20pedir%20infomacion" class="link-card" data-tilt>
+                <i class="fab fa-whatsapp"></i>
+                <span>Whatsapp</span>
                 <div class="card-glow"></div>
             </a>
         </div>
 
         <!-- Sección de redes sociales -->
         <div class="social-links">
-            <a href="https://www.facebook.com/PerfectToursPeru/" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <div class="car-container">
+                <i class="fa-solid fa-van-shuttle car"></i>
+            </div>
         </div>
     </div>
 
@@ -71,9 +71,9 @@
         // Inicialización del efecto tilt en las tarjetas
         VanillaTilt.init(document.querySelectorAll(".link-card"), {
             max: 15,
-            speed: 400,
+            speed: 300,
             glare: true,
-            "max-glare": 0.2,
+            "max-glare": 0.9,
         });
 
         // Configuración del canvas de partículas
@@ -146,3 +146,4 @@
     </script>
 </body>
 </html>
+
