@@ -164,6 +164,7 @@ body {
 /* Contenedor de enlaces */
 .links {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 16px;
     align-items: center; /* Centra las tarjetas horizontalmente */
@@ -182,11 +183,12 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
     overflow: hidden;
-    width: 80%; /* Reduce el ancho de las tarjetas */
+    width: 60%; /* Reduce el ancho de las tarjetas */
     max-width: 400px; /* Establece un ancho máximo */
 }
 
@@ -229,60 +231,6 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 40px;
-    position: relative;
-    width: 100%;
-    height: 50px;
-}
-
-.car-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-}
-
-.car {
-    position: absolute;
-    font-size: 32px;
-    color: #fff;
-    animation: driveCar 8s linear infinite;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
-    z-index: 2;
-    left: -50px; /* Empezar desde fuera de la pantalla */
-}
-
-.car-text {
-    position: absolute;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    right: 45px;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    animation: driveCarText 8s linear infinite;
-    z-index: 1;
-    white-space: nowrap;
-}
-
-@keyframes driveCar {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(100vw + 50px));
-    }
-}
-
-@keyframes driveCarText {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100vw);
-    }
 }
 
 .social-icon {
@@ -446,5 +394,6 @@ body {
         border-radius: 6px;
     }
 }
+
 
 
